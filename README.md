@@ -30,13 +30,37 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+1. You can use both map() and forEach() interchangeably. The biggest difference is that forEach() allows the mutation of the original array, while map() returns a new array of the same size. map() is also faster. But it is entirely 
+
+
 2. What is the difference between a function and a method?
+
+2. A function is a piece of code that is called by name. It can be passed data to operate on (i.e. the parameters) and can optionally return data (the return value). All data that is passed to a function is explicitly passed. A method is a piece of code that is called by a name that is associated with an object.
 
 3. What is closure?
 
+3. A closure is the combination of a function bundled together (enclosed) with references to its surrounding state In other words, a closure gives you access to an outer function's scope from an inner function.
+
 4. Describe the four rules of the 'this' keyword.
 
+4.  1- Default Binding:
+    It’s the most common case of function calls the standalone function invocation
+
+    2- Implicit Binding:
+    In this case, The object that is standing before the dot is what this keyword will be bound to.
+
+    3- Explicit Binding:
+    In this case, you can force a function call to use a particular object for this binding, without putting a property function reference on the object. so we explicitly say to a function what object it should use for this — using functions such as call, apply and bind
+
+    4- New Binding
+    The last rule exists for this binding.The function that is called with new operator when the code new Foo(…) is executed, the following things happen:
+    1- An empty object is created and referenced by this variable, inheriting the prototype of the function.
+    2- Properties and methods are added to the object referenced by this.
+    3- The newly created object referenced by this is returned at the end implicitly (if no other object was returned explicitly).
+
 5. Why do we need super() in an extended class?
+
+5.The super() keyword in javascript is used in order to call the methods of the parent class. This is often used within a constructor function to call the parent constructor function...
 
 ## Project Set up
 
